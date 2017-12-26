@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Театр у микрофона</title>
+    <meta name="keywords" content="Театр, аудиотеатр, театр у микрофона">
+    <meta name="description" content="Сайт театра у микрофона">
+    <meta name="author" content="XPage">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Театр у микрофона">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./img/logo-open-graph_968x504.jpg">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <meta name="twitter:title" content="Театр у микрофона">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="./img/logo-open-graph_968x504.jpg">
+    <meta name="twitter:image:src" content="./img/logo-open-graph_968x504.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#fff">
+    <!-- Windows Phone-->
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <!-- iOS Safari-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mine.css">
+</head>
+
+<body>
+    <section class="page-content">
+        <div class="sticky-header">
+            <div class="sticky-header__top">
+                <div class="sticky-header__buy-container">
+                    <div class="buy-title buy-title--sticky">
+                        <h3>Радиоспектакль</h3></div>
+                    <div class="buy-spectacle-name buy-spectacle-name--sticky">
+                        <h2>Маленький принц</h2></div>
+                    <button onclick="window.location='#buy'" class="sticky-header__button-buy">Купить радиоспектакль</button>
+                    <button class="sticky-header__button-buy--trans">Купить</button>
+                </div>
+                <div class="sticky-header__gamburger-container"><img class="navigation__icon navigation__icon--black" src="./img/tum_logo_black.svg"><img class="navigation__icon navigation__icon--white navigation__icon--visible" src="./img/tum_logo_white.svg">
+                    <button class="navigation__gumburger" id="navigation__gumburger"><span class="line"></span><span class="line"></span><span class="line"></span></button>
+                    <p class="gamb-menu">меню </p>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-header__bottom">
+            <div class="sticky-header__space"></div>
+            <nav class="header-bottom__nav">
+                <ul class="menu">
+                    <li class="menu__item active"><a href="index">Главная</a></li>
+                    <li class="menu__item"> <a href="show.html">Спектакли</a></li>
+                    <li class="menu__item"> <a href="about.html">О проекте</a></li>
+                    <li class="menu__item"> <a href="#">Новости</a></li>
+                    <li class="menu__item active"> <a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navigation-vertical">
+            <div class="scroll-menu" id="section-scroller-button">Скролл</div>
+            <ul class="top-vertical-menu">
+                <li class="top-vertical-menu__item"><a href="#buy">Купить</a></li>
+                <li class="top-vertical-menu__item"><a href="#media">Медиа</a></li>
+                <li class="top-vertical-menu__item"><a href="#actors">Участники</a></li>
+                <li class="top-vertical-menu__item"><a href="#about">Об авторе  </a></li>
+                <li class="top-vertical-menu__item"><a class="active" href="#tease">Тизер</a></li>
+            </ul>
+        </div>
+        <section class="header" id="tease">
+            <div class="header-trans">
+                <div class="header-max-container">
+                    <div class="current-spectacle animated fadeInDown">
+                        <hgroup>
+                            <div class="current-spectacle__author">
+                                <h3>Антуан де Сент-Экзюпери</h3></div>
+                            <div class="current-spectacle__spectacle-name">
+                                <h1>Маленький принц</h1></div>
+                        </hgroup>
+                    </div>
+                    <div class="header-buttons-group animated fadeInDown">
+                        <div class="header-btn-container"> <a class="main-button" href="#buy">Купить радиоспектакль    </a></div>
+                        <div class="header-btn-container header-btn-container--minidesc" onclick="teaserClick()"><a class="main-button main-button--arrow" href="#">Смотреть тизер</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="author-container section-scrol" id="about">
+            <div class="author-transparent-icon-left animated fadeIn wow"><img class="author-transparent-img" src="./img/show_page/lamb.png" alt="lamb"></div>
+            <div class="author-container-transparent">
+                <div class="autor-max-container">
+                    <div class="author animated fadeInUP wow">
+                        <div class="author-transparent-icon-right animated fadeIn wow"><img class="author-transparent-img author-transparent-img--beards" src="./img/show_page/beards.png" alt="beards"></div>
+                        <div class="author__about">
+                            <h3>Об авторе</h3></div>
+                        <div class="author__name">
+                            <h1>Летчик и писатель Сент-Экзюпери</h1></div>
+                        <div class="author__description animated fadeIn wow">
+                            <p>В июне текущего года, гению, чья личность происходила из старинного рода дворян во Франции (г. Лион) - исполнилось бы 117-ть лет.</p>
+                        </div>
+                        <div class="author__description animated fadeIn wow">
+                            <p>Полюбившийся во всем мире писатель-летчик, Антуан де Сент-Экзюпери навсегда запомнился человечеству своей неординарностью, которую он успешно выражал, как на листе бумаги, так и в небе. Немудрено, ведь он никогда не скрывал своего пристрастия к пилотированию, ведь даже пережитые им неоднократно авиакатастрофы, которые носили весьма травматические и болезненные последствия - не представляли для Сент-Экзюпери никакой опасности! А в перерывах между полётами, Тонио (так называли его близкие и родные люди), занимался написанием своих литературных произведений. Так однажды, во времена Второй Мировой войны в 1942 году была написана книга, весьма в необычном для Экзюпери стиле, что-то вроде: "философской сказки" или "мудрой притчи". С момента первой публикации произведения прошло более чем пол сотни лет. На первый взгляд ничего примечального, так себе - обычная книжная брошюра высотой в пол сантиметра и не более; книжная брошюра, которая впоследствии не только смогла завоевать признание среди множества литературных критиков, но и стала одним из величайших в истории искусства мировым бестселлером! Как ему это удалось? - остаётся загадкой по сей день, но каждый раз, когда мы листаем страницы "Маленького Принца" - нас не покидает ощущение того, что однажды исчезнувший в небе пилот, оставил нам письмо, которое мы не устанем читать никогда...!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="artists-container section-scroll" id="actors">
+            <div class="artist-transparent-image--left"></div>
+            <div class="artist-transparent-image--center"></div>
+            <div class="artist-transparent-image--right"> </div>
+            <div class="artists-title">
+                <h3>Участники проекта</h3></div>
+            <div class="artists-scrolling">
+                <div class="artists-scrolling__title">
+                    <h4>Прокрутка    </h4></div>
+            </div>
+            <div class="slider artists-carousel">
+                <div class="artists" onclick="onSliderClick()">
+                    <div class="artists-img-cont">
+                        <div class="artists__photo-shadow"></div>
+                        <svg class="artists__photo" id="svg-heart" width="370" height="320" viewBox="0 0 370 320">
+                            <mask id="mask-heart">
+                                <g stroke="blue" stroke-width="0" fill="white">
+                                    <path fill="white" d="M191.269,47.819C142.709-49.149-82.879,15.111,38.856,203.074              c48.798,75.346,158.952,110.362,158.952,110.362s168.402-64.855,170.854-203.653C370.739-7.715,240.727-25.71,191.269,47.819z"></path>
+                                </g>
+                            </mask>
+                            <image xlink:href="./img/participant-2_734x622.jpg" width="370" height="320" mask="url(#mask-heart)"></image>
+                        </svg>
+                    </div>
+                    <div class="artists__name"> <a href="#"><h3>Александр Меламуд</h3></a></div>
+                    <div class="artists__role">
+                        <h4>Летчик</h4></div>
+                </div>
+                <div class="artists" onclick="onSliderClick()">
+                    <div class="artists-img-cont">
+                        <div class="artists__photo-shadow"></div>
+                        <svg class="artists__photo" id="svg-heart" width="370" height="320" viewBox="0 0 370 320">
+                            <mask id="mask-heart">
+                                <g stroke="blue" stroke-width="0" fill="white">
+                                    <path fill="white" d="M191.269,47.819C142.709-49.149-82.879,15.111,38.856,203.074              c48.798,75.346,158.952,110.362,158.952,110.362s168.402-64.855,170.854-203.653C370.739-7.715,240.727-25.71,191.269,47.819z"></path>
+                                </g>
+                            </mask>
+                            <image xlink:href="./img/participant-2_734x622.jpg" width="370" height="320" mask="url(#mask-heart)"></image>
+                        </svg>
+                    </div>
+                    <div class="artists__name"> <a href="#"><h3>Александр Меламуд</h3></a></div>
+                    <div class="artists__role">
+                        <h4>Летчик</h4></div>
+                </div>
+                <div class="artists" onclick="onSliderClick()">
+                    <div class="artists-img-cont">
+                        <div class="artists__photo-shadow"></div>
+                        <svg class="artists__photo" id="svg-heart" width="370" height="320" viewBox="0 0 370 320">
+                            <mask id="mask-heart">
+                                <g stroke="blue" stroke-width="0" fill="white">
+                                    <path fill="white" d="M191.269,47.819C142.709-49.149-82.879,15.111,38.856,203.074              c48.798,75.346,158.952,110.362,158.952,110.362s168.402-64.855,170.854-203.653C370.739-7.715,240.727-25.71,191.269,47.819z"></path>
+                                </g>
+                            </mask>
+                            <image xlink:href="./img/participant-2_734x622.jpg" width="370" height="320" mask="url(#mask-heart)"></image>
+                        </svg>
+                    </div>
+                    <div class="artists__name"> <a href="#"><h3>Александр Меламуд</h3></a></div>
+                    <div class="artists__role">
+                        <h4>Летчик</h4></div>
+                </div>
+                <div class="artists" onclick="onSliderClick()">
+                    <div class="artists-img-cont">
+                        <div class="artists__photo-shadow"></div>
+                        <svg class="artists__photo" id="svg-heart" width="370" height="320" viewBox="0 0 370 320">
+                            <mask id="mask-heart">
+                                <g stroke="blue" stroke-width="0" fill="white">
+                                    <path fill="white" d="M191.269,47.819C142.709-49.149-82.879,15.111,38.856,203.074              c48.798,75.346,158.952,110.362,158.952,110.362s168.402-64.855,170.854-203.653C370.739-7.715,240.727-25.71,191.269,47.819z"></path>
+                                </g>
+                            </mask>
+                            <image xlink:href="./img/participant-2_734x622.jpg" width="370" height="320" mask="url(#mask-heart)"></image>
+                        </svg>
+                    </div>
+                    <div class="artists__name"> <a href="#"><h3>Александр Меламуд</h3></a></div>
+                    <div class="artists__role">
+                        <h4>Летчик </h4></div>
+                </div>
+                <div class="artists" onclick="onSliderClick()">
+                    <div class="artists-img-cont">
+                        <div class="artists__photo-shadow"></div>
+                        <svg class="artists__photo" id="svg-heart" width="370" height="320" viewBox="0 0 370 320">
+                            <mask id="mask-heart">
+                                <g stroke="blue" stroke-width="0" fill="white">
+                                    <path fill="white" d="M191.269,47.819C142.709-49.149-82.879,15.111,38.856,203.074              c48.798,75.346,158.952,110.362,158.952,110.362s168.402-64.855,170.854-203.653C370.739-7.715,240.727-25.71,191.269,47.819z"></path>
+                                </g>
+                            </mask>
+                            <image xlink:href="./img/participant-2_734x622.jpg" width="370" height="320" mask="url(#mask-heart)"></image>
+                        </svg>
+                    </div>
+                    <div class="artists__name"><a href="#"><h3>Александр Меламуд</h3></a></div>
+                    <div class="artists__role">
+                        <h4>Летчик        </h4></div>
+                </div>
+            </div>
+            <div id="slider-modal">
+                <section class="page-content">
+                    <section class="popup-container">
+                        <div class="popup-show-max-container">
+                            <button class="navigation__gumburger-popup" onclick="sliderClose()"><span class="line"></span><span class="line"></span><span class="line">   </span></button>
+                            <div class="popup-image-container">
+                                <div class="artists__photo-shadow-popup"> </div>
+                                <svg class="artists__photo" id="svg-heart-pop" width="535" height="490" viewBox="0 0 535 500">
+                                    <mask id="mask-heart-pop">
+                                        <g stroke="blue" stroke-width="0" fill="white">
+                                            <path fill="white" d="M280.337,63.347c103.988-145.808,396.199,56.435,181.548,298.35       	          C375.841,458.671,209.94,485.196,209.94,485.196S-18.856,357.128,6.725,158.917C28.38-8.877,224.569-39.172,280.337,63.347z"></path>
+                                        </g>
+                                    </mask>
+                                    <image xlink:href="./img/participant-1_734x622.jpg" width="580" height="490" mask="url(#mask-heart-pop)"></image>
+                                </svg>
+                            </div>
+                            <div class="popup-about-artist">
+                                <div class="popup-about-artist__name">Маргарита Сичкарь</div>
+                                <div class="popup-about-artist__role">в роли Маленького принца</div>
+                                <div class="popup-about-artist__artist-biography">Маргарита Сичкарь (Ващук) известная бизнес woman в Украине , владела 6 ресторанами в Украине и России, издательским домом «ТриВэ», пиар-агентством «StreetArt». В настоящий момент владелица первого в Украине образовательного кластера «Schastiehub» (schastiehub.com, Happinesshub). Основала школу счастливой жизни (авторские тренинги), общественный деятель, основатель благотворительного фонда анималопотерапии, автор проекта детского эко-обраовательного центра «Камелия» (Happyschool) для детей, облада-тель национальной премии «Благотворитель года 2009», «Женщина третьего тысячелетия», ведущая на известных телеканалах Украины (1+1, СТБ, МаксиТВ), автор книг «Дневник ресторатора», «Жизнь без паники», «Дневник успешной женщины»).</div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+        <section class="media-bakground section-scroll" id="media">
+            <div class="media-container">
+                <div class="media-title animated fadeIn">
+                    <h3>Медиаматериалы</h3></div>
+                <ul>
+                    <li onclick="imgClick()"><img src="./img/gallery/fox.png"></li>
+                    <li class="video-item" onclick="onVideoClick()"><img src="./img/gallery/sichkar.png"></li>
+                    <li class="video-item" onclick="onVideoClick()"><img src="./img/gallery/melamud.png"></li>
+                    <li onclick="imgClick()"><img src="./img/gallery/shylko.png"></li>
+                    <li onclick="imgClick()"><img src="./img/gallery/work.png"></li>
+                    <li onclick="imgClick()"><img src="./img/gallery/selfy.png"></li>
+                </ul>
+            </div>
+            <div class="myvideo" id="video_pop" onclick="modClose()" style="display: none;">
+                <iframe id="the_Video" width="854" height="480" src="https://www.youtube.com/embed/ulcnFPH8Js0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+                <p id="video_pop-close" onclick="modClose()">X </p>
+            </div>
+        </section>
+        <section class="buy-bakground section-scroll" id="buy">
+            <div class="buy-transparent-icon-top"><img class="buy-transparent-img" src="./img/show_page/stars.png" alt="media"></div>
+            <div class="buy-transparent-icon-left"><img class="buy-transparent-img" src="./img/show_page/king.png" alt="media"></div>
+            <div class="buy-transparent-icon-right"><img class="buy-transparent-img" src="./img/show_page/mountain.png" alt="media"></div>
+            <section class="buy-container">
+                <div class="buy-max-container">
+                    <div class="buy-playbill-transparent"><img class="buy-playbill-img" src="./img/playbill.jpg" alt="playbill">
+                        <div class="proba"> </div>
+                    </div>
+                    <div class="buy-pay-info">
+                        <div class="buy-pay">
+                            <div class="buy-spectacle-head">
+                                <div class="buy-title">
+                                    <h4>Радиоспектакль</h4></div>
+                                <div class="buy-spectacle-name">
+                                    <h2>Маленький принц</h2></div>
+                            </div>
+                            <div class="buy-price-card">
+                                <div class="price"><span class="price__number">45</span><span class="price__currency">грн</span><span class="price__pennies">00</span></div>
+                                <div class="card"><img class="card-icon" src="./img/card.png" alt="card"></div>
+                            </div>
+                            <div class="buy-btn-container"><a class="main-button main-button--buy" href="#">Купить радиоспектакль </a></div>
+                        </div>
+                        <div class="buy-playbill"><img class="buy-playbill-img" src="./img/playbill.jpg" alt="playbill">
+                            <div class="proba"> </div>
+                        </div>
+                        <section class="sponsors">
+                            <div class="sponsors__logo-container"><img class="sponsor-logo" src="./img/sponsors-logo.png" alt="sponsors-logo"></div>
+                            <h4 class="sponsors__description">Все полученные средства от продажи радиоспектаклей Мы передаем БФ «Гиппократ», который оказывает помощь людям, которые страдают расстройствами пищевого поведения (анорексия, булимия).</h4><a class="sponsors__more" href="#">Подробнее &rarr;  </a></section>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <footer>
+            <div class="footer-backgroun">
+                <section class="footer-max-cont">
+                    <section class="footer-left">
+                        <div class="copyright">
+                            <p><span class="copyright-data">© 2017</span><span class="copyrigh-name">«Театр у микрофона»</span>
+                                <br> <span class="copyright-all">Все права защищены      </span></p>
+                        </div>
+                        <div class="contacts">
+                            <div class="contacts__phone">
+                                <p>+38 093 333-54-79 </p>
+                            </div><a class="contacts__mail" href="#">art_maker@ukr.net</a></div>
+                    </section>
+                    <section class="footer-center">
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item">
+                                <p><a href="show.html">Cпектакли</a></p>
+                            </li>
+                            <li class="footer-menu__item">
+                                <p> <a href="about.html">О проекте</a></p>
+                            </li>
+                            <li class="footer-menu__item">
+                                <p><a href="#">Новости</a></p>
+                            </li>
+                            <li class="footer-menu__item">
+                                <p><a href="contacts.html">Контакты  </a></p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="footer-button">
+                        <div class="footer-btn-container">
+                            <p><a class="button-go-start">Вернуться к началу      </a></p>
+                        </div>
+                    </section>
+                    <section class="footer-right">
+                        <div class="footer-btn-container-trans">
+                            <p><a class="button-go-start" href="#">Вернуться к началу    </a></p>
+                        </div>
+                        <div class="desighn-by">
+                            <p>Создание сайта —
+                                <a href="#"><img src="./img/logo_footer.svg" alt="desighn-logo"></a>
+                            </p>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </footer>
+    </section>
+</body>
+<script src="js/scripts.js"></script>
+
+</html>
