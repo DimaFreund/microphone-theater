@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <base href="<?php echo get_template_directory_uri(); ?>/">
     <meta name="author" content="XPage">
     <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
@@ -55,10 +55,6 @@
     <meta name="msapplication-navbutton-color" content="#fff">
     <!-- iOS Safari-->
     <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/mine.css">
 
 
 

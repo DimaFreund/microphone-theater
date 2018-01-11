@@ -95,64 +95,39 @@ function theater_content_width() {
 }
 add_action( 'after_setup_theme', 'theater_content_width', 0 );
 
-/**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
-function theater_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'theater' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'theater' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-}
-add_action( 'widgets_init', 'theater_widgets_init' );
 
-/**
- * Enqueue scripts and styles.
- */
-function theater_scripts() {
-	wp_enqueue_style( 'theater-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'theater-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
-	wp_enqueue_script( 'theater-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'theater_scripts' );
-
-/**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
-
-/**
- * Custom template tags for this theme.
- */
-require get_template_directory() . '/inc/template-tags.php';
 
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
 
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
 
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
+// added custom scripts and css
+
+require get_template_directory(). '/inc/enqueue.php';
+
+// added custom post type
+
+require get_template_directory(). '/inc/post-type.php';
+
+// added sidebar
+
+require get_template_directory(). '/inc/sidebar.php';
+
+// added settings Platon
+
+require get_template_directory(). '/inc/platon-settings.php';
+
+// added order
+
+require get_template_directory(). '/inc/order.php';
+
+// added order list in admin
+
+require get_template_directory(). '/inc/OrderList.php';
+
+add_image_size( 'heart_image', 570, 481, true);
+add_image_size( 'media_thumbnails', 600, 180 );
 

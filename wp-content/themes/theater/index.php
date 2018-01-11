@@ -14,7 +14,6 @@
 
 get_header(); ?>
 
-sadfsdfsdfsdfsfsdf
 <?php
 get_sidebar();
 get_footer();
